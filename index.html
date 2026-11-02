@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claimsys | Secure Quantum Infrastructure</title>
+    <style>
+        :root {
+            --primary-green: #2ecc71;
+            --secondary-blue: #1b3a6b;
+            --dark-bg: #0f172a;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Representación CSS del isotipo geométrico con hoja integrada */
+        .logo-emblem {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-blue) 100%);
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
+        }
+
+        .logo-emblem::after {
+            content: '';
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 50%;
+            background-color: var(--dark-bg);
+            border-radius: 50% 0 50% 0; /* Forma de hoja estilizada calada */
+            transform: rotate(-45deg);
+        }
+
+        .logo-text h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            background: linear-gradient(to right, #ffffff, var(--text-muted));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-text p {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-green);
+        }
+
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-green);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .contact-section {
+            max-width: 600px;
+            margin: 6rem auto;
+            padding: 3rem 2rem;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            border-radius: 24px;
+            border: 1px solid #334155;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--primary-green) 0%, #27ae60 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+            transition: opacity 0.2s ease;
+        }
+
+        .btn-contact:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #475569;
+            font-size: 0.85rem;
+            border-top: 1px solid #1e293b;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-emblem"></div>
+            <div class="logo-text">
+                <h1>CLAIMSYS</h1>
+                <p>Secure Quantum Infrastructure</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Soberanía de Datos Verde e Infraestructura Cuántica</h2>
+            <p>Diseñamos y operamos la próxima generación de centros de datos modulares de alta densidad. Soluciones eco-eficientes blindadas con inmunidad térmica, redundancia energética y aislamiento de red en el Sur de Europa.</p>
+        </section>
+
+        <section class="features">
+            <div class="card">
+                <h3>01. Cómputo Cuántico Sostenible</h3>
+                <p>Infraestructura optimizada para el procesamiento neuronal y algoritmos cuánticos avanzados, operando bajo un modelo 100% verde con huella de carbono neutral alimentada por fuentes locales.</p>
+            </div>
+            <div class="card">
+                <h3>02. Eficiencia Térmica Avanzada</h3>
+                <p>Sistemas de climatización por circuito cerrado que aprovechan las ventajas climáticas geográficas, alcanzando un PUE objetivo líder en la industria sin emisiones térmicas externas.</p>
+            </div>
+            <div class="card">
+                <h3>03. Custodia de Datos Inmaterial</h3>
+                <p>Arquitectura de búnker de alta seguridad con aislamiento físico de red y protocolos de redundancia blindados para la continuidad operativa ante contingencias críticas globales.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h3>Área de Relaciones Institucionales</h3>
+            <p>Acceso restringido para fondos de inversión en infraestructuras ESG y entidades de gestión soberana de activos.</p>
+            <a href="mailto:investor@claimsys.com" class="btn-contact">Canal Inversor Encriptado</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Claimsys Quantum Infrastructure. Todos los derechos reservados. Las especificaciones técnicas de los nodos críticos están protegidas bajo secreto comercial industrial.</p>
+    </footer>
+
+</body>
+</html>
